@@ -1,201 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thandar Tun - Resume</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="jsPDF/dist/jspdf.umd.min.js"></script>
-
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-
-        .resume-header {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .resume-section {
-            padding: 30px;
-            margin: 20px 0;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        .resume-section h2 {
-            color: #007BFF;
-            margin-bottom: 20px;
-        }
-
-        .resume-section p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .jumbotron {
-            background-color: #82beff;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .project {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-
-        .project h3 {
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-
-        .project .date {
-            color: #777;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .project ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .project ul li {
-            margin-bottom: 8px;
-        }
-    </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Thandar Tun</h1>
-            <p class="lead">Full Stack Developer</p>
-        </div>
+      <div class="jumbotron">
+        <h1 class="display-4">Thandar Tun</h1>
+        <p class="lead">Full Stack Developer</p>
+      </div>
 
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <!-- Education Section -->
-                <div class="resume-section">
-                    <h2>Education</h2>
-                    <!-- Add your education details here using Bootstrap classes -->
-                    <p><strong>Georgia Institute of Technology, Atlanta GA</strong></p>
-                    <p>M.S., Computer Science, May 2025 (Expected)<br>
-                    Relevant Coursework: Database System, Concepts and Design; Human-Computer Interaction</p>
-                    <p><strong>Rutgers University, Newark/New Jersey Institute of Technology (Joint Program)</strong></p>
-                    <p>B.A., Computer Science and Applied Mathematics, May 2021<br>
-                    Relevant Coursework: Data Structures 1 and 2, Programming Language Concept, Database Management System, CS Project, Guided Design in Software Engineer</p>
-                </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Education Section -->
+          <div class="resume-section">
+            <h2>Education</h2>
+            <!-- Add your education details here using Bootstrap classes -->
+            <p><strong>Georgia Institute of Technology, Atlanta GA</strong></p>
+            <p>
+              M.S., Computer Science, May 2025 (Expected)<br />
+              Relevant Coursework: Database System, Concepts and Design;
+              Human-Computer Interaction
+            </p>
+            <p>
+              <strong
+                >Rutgers University, Newark/New Jersey Institute of Technology
+                (Joint Program)</strong
+              >
+            </p>
+            <p>
+              B.A., Computer Science and Applied Mathematics, May 2021<br />
+              Relevant Coursework: Data Structures 1 and 2, Programming Language
+              Concept, Database Management System, CS Project, Guided Design in
+              Software Engineer
+            </p>
+          </div>
 
-                <!-- Skills Section -->
-                <div class="resume-section">
-                    <h2>Skills</h2>
-                    <!-- Add your skills here using Bootstrap classes -->
-                    <p><strong>Programming Languages:</strong> Python, C#, HTML, CSS, JavaScript, Java</p>
-                    <p><strong>Databases & OS:</strong> PostgreSQL, MySQL Server, Oracle, Workbench, Windows, Linux, macOS</p>
-                    <p><strong>Frameworks & Technologies:</strong> Flask, .NET Core, Asp .Net, SSIS, SSRS, ETL</p>
-                    <p><strong>Languages:</strong> Burmese (Native), English (Full Professional), Mandarin (Intermediate)</p>
-                </div>
+          <!-- Skills Section -->
+          <div class="resume-section">
+            <h2>Skills</h2>
+            <!-- Add your skills here using Bootstrap classes -->
+            <p>
+              <strong>Programming Languages:</strong> Python, C#, HTML, CSS,
+              JavaScript, Java
+            </p>
+            <p>
+              <strong>Databases & OS:</strong> PostgreSQL, MySQL Server, Oracle,
+              Workbench, Windows, Linux, macOS
+            </p>
+            <p>
+              <strong>Frameworks & Technologies:</strong> Flask, .NET Core, Asp
+              .Net, SSIS, SSRS, ETL
+            </p>
+            <p>
+              <strong>Languages:</strong> Burmese (Native), English (Full
+              Professional), Mandarin (Intermediate)
+            </p>
+          </div>
 
-                <!-- Experiences Section -->
-                <div class="resume-section">
-                    <h2>Experiences</h2>
-                    <!-- Add your experiences here using Bootstrap classes -->
-                    <div>
-                        <h3>Tata Consultancy Services (North America) – Full Stack Developer</h3>
-                        <p class="date">Sept 2021 – Sept 2022</p>
-                        <ul>
-                            <li>Created and maintained documentation for SSIS packages and SQL scripts, enabling seamless knowledge sharing among team members.</li>
-                            <li>Developed and maintained ETL processes using SQL Server Integration Services (SSIS) to efficiently extract, transform, and load (ETL) data from diverse sources into the data warehouse.</li>
-                            <li>Maintained scheduled jobs and automation processes using SQL Server Agent, enhancing the efficiency and reliability of regular data updates and maintenance tasks.</li>
-                            <li>Collaborated with stakeholders to gather project requirements, objectives, and technical specifications related to SQL databases.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Projects Section -->
-                <div class="resume-section">
-                    <h2>Projects</h2>
-                    <!-- Add your projects here using Bootstrap classes -->
-                    <!-- BuzzCar Project -->
-                    <div class="project">
-                        <h3>BuzzCar Project - Full Stack Developer</h3>
-                        <p class="date">Sep 2023 - Dec 2023</p>
-                        <ul>
-                            <li>Spearheaded the development of a dynamic user-car dealership web application utilizing the Python Flask framework for the backend.</li>
-                            <li>Leveraged plain SQL queries for seamless database interactions and optimal data retrieval.</li>
-                            <li>Collaborated with a team of 5 to analyze project requirements, design an efficient database structure, and implement robust features.</li>
-                            <li>Actively participated in agile meetings to ensure effective communication and swift problem resolution.</li>
-                        </ul>
-                        <p>Skills: PostgreSQL · Microsoft Visual Studio Code · Flask · Bootstrap (Framework) · JavaScript · Agile Methodologies · Python (Programming Language) · HTML5 · CSS</p>
-                    </div>
-
-                    <!-- Case Study - Full Stack .Net Developer -->
-                    <div class="project">
-                        <h3>Case Study - Full Stack .Net Developer</h3>
-                        <p class="date">Nov 2021 - Nov 2021</p>
-                        <ul>
-                            <li>Developed a retail bank management system in a team of 4, where the manager can log in as an admin to add employees who can manage to add, view, delete, and edit customer and account by using .NET framework.</li>
-                            <li>Arranged team meetings to develop a roadmap for a project, distributed tasks equally, and planned day-to-day tasks by utilizing Azure DevOps.</li>
-                        </ul>
-                        <p>Skills: .NET Framework</p>
-                    </div>
-
-                    <!-- Capstone Project - Business Analyst -->
-                    <div class="project">
-                        <h3>Capstone Project - Business Analyst</h3>
-                        <p class="date">Jan 2021 - May 2021</p>
-                        <ul>
-                            <li>Conducted business process analysis and identified the basic needs of the project by collaborating with the project manager and 5 developers.</li>
-                            <li>Organized data from team members to calculate the WSJF and developed a roadmap for the project, managed prioritization, and monitored the work to meet objectives.</li>
-                        </ul>
-                        <p>Skills: WSJF, Agile, Business Analyst</p>
-                    </div>
-
-                    <!-- Capstone Project - Backend Developer/Project Manager -->
-                    <div class="project">
-                        <h3>Capstone Project - Backend Developer/Project Manager</h3>
-                        <p class="date">Sep 2020 - Dec 2020</p>
-                        <ul>
-                            <li>Designed a social media website for pets with a team of 3; structured and managed the database in phpMyAdmin with PHP and MySQL.</li>
-                            <li>Determined the milestones of the project and assigned weekly tasks to team members to get efficient results in the project progression.</li>
-                        </ul>
-                        <p>Skills: Project Management, HTML, CSS, phpMyAdmin, PHP, MySQL</p>
-                    </div>
-
-                    <!-- Database System Design and Management -->
-                    <div class="project">
-                        <h3>Database System Design and Management</h3>
-                        <p class="date">Jan 2019 - May 2019</p>
-                        <ul>
-                            <li>Built a comprehensive hospital management database system using MySQL with 8 tables.</li>
-                            <li>Managed project timelines and schedules, setting daily goals through effective collaboration with team members.</li>
-                        </ul>
-                        <p>Skills: MySQL · Project Management</p>
-                    </div>
-                </div>
+          <!-- Experiences Section -->
+          <div class="resume-section">
+            <h2>Experiences</h2>
+            <!-- Add your experiences here using Bootstrap classes -->
+            <div>
+              <h3>
+                Tata Consultancy Services (North America) – Full Stack Developer
+              </h3>
+              <p class="date">Sept 2021 – Sept 2022</p>
+              <ul>
+                <li>
+                  Created and maintained documentation for SSIS packages and SQL
+                  scripts, enabling seamless knowledge sharing among team
+                  members.
+                </li>
+                <li>
+                  Developed and maintained ETL processes using SQL Server
+                  Integration Services (SSIS) to efficiently extract, transform,
+                  and load (ETL) data from diverse sources into the data
+                  warehouse.
+                </li>
+                <li>
+                  Maintained scheduled jobs and automation processes using SQL
+                  Server Agent, enhancing the efficiency and reliability of
+                  regular data updates and maintenance tasks.
+                </li>
+                <li>
+                  Collaborated with stakeholders to gather project requirements,
+                  objectives, and technical specifications related to SQL
+                  databases.
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Projects Section -->
+          <div class="resume-section">
+            <h2>Projects</h2>
+            <!-- Add your projects here using Bootstrap classes -->
+            <!-- BuzzCar Project -->
+            <div class="project">
+              <h3>BuzzCar Project - Full Stack Developer</h3>
+              <p class="date">Sep 2023 - Dec 2023</p>
+              <ul>
+                <li>
+                  Spearheaded the development of a dynamic user-car dealership
+                  web application utilizing the Python Flask framework for the
+                  backend.
+                </li>
+                <li>
+                  Leveraged plain SQL queries for seamless database interactions
+                  and optimal data retrieval.
+                </li>
+                <li>
+                  Collaborated with a team of 5 to analyze project requirements,
+                  design an efficient database structure, and implement robust
+                  features.
+                </li>
+                <li>
+                  Actively participated in agile meetings to ensure effective
+                  communication and swift problem resolution.
+                </li>
+              </ul>
+              <p>
+                Skills: PostgreSQL · Microsoft Visual Studio Code · Flask ·
+                Bootstrap (Framework) · JavaScript · Agile Methodologies ·
+                Python (Programming Language) · HTML5 · CSS
+              </p>
+            </div>
+
+            <!-- Case Study - Full Stack .Net Developer -->
+            <div class="project">
+              <h3>Case Study - Full Stack .Net Developer</h3>
+              <p class="date">Nov 2021 - Nov 2021</p>
+              <ul>
+                <li>
+                  Developed a retail bank management system in a team of 4,
+                  where the manager can log in as an admin to add employees who
+                  can manage to add, view, delete, and edit customer and account
+                  by using .NET framework.
+                </li>
+                <li>
+                  Arranged team meetings to develop a roadmap for a project,
+                  distributed tasks equally, and planned day-to-day tasks by
+                  utilizing Azure DevOps.
+                </li>
+              </ul>
+              <p>Skills: .NET Framework</p>
+            </div>
+
+            <!-- Capstone Project - Business Analyst -->
+            <div class="project">
+              <h3>Capstone Project - Business Analyst</h3>
+              <p class="date">Jan 2021 - May 2021</p>
+              <ul>
+                <li>
+                  Conducted business process analysis and identified the basic
+                  needs of the project by collaborating with the project manager
+                  and 5 developers.
+                </li>
+                <li>
+                  Organized data from team members to calculate the WSJF and
+                  developed a roadmap for the project, managed prioritization,
+                  and monitored the work to meet objectives.
+                </li>
+              </ul>
+              <p>Skills: WSJF, Agile, Business Analyst</p>
+            </div>
+
+            <!-- Capstone Project - Backend Developer/Project Manager -->
+            <div class="project">
+              <h3>Capstone Project - Backend Developer/Project Manager</h3>
+              <p class="date">Sep 2020 - Dec 2020</p>
+              <ul>
+                <li>
+                  Designed a social media website for pets with a team of 3;
+                  structured and managed the database in phpMyAdmin with PHP and
+                  MySQL.
+                </li>
+                <li>
+                  Determined the milestones of the project and assigned weekly
+                  tasks to team members to get efficient results in the project
+                  progression.
+                </li>
+              </ul>
+              <p>
+                Skills: Project Management, HTML, CSS, phpMyAdmin, PHP, MySQL
+              </p>
+            </div>
+
+            <!-- Database System Design and Management -->
+            <div class="project">
+              <h3>Database System Design and Management</h3>
+              <p class="date">Jan 2019 - May 2019</p>
+              <ul>
+                <li>
+                  Built a comprehensive hospital management database system
+                  using MySQL with 8 tables.
+                </li>
+                <li>
+                  Managed project timelines and schedules, setting daily goals
+                  through effective collaboration with team members.
+                </li>
+              </ul>
+              <p>Skills: MySQL · Project Management</p>
+            </div>
+          </div>
         </div>
-        <div class="text-center mt-4">
-            <a class="btn btn-primary" href="https://drive.google.com/file/d/1GhwG9xgffZMJXunGwzCGS6mksU8E28Ws/view?usp=sharing" download>Download PDF</a>
-        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a
+          class="btn btn-primary"
+          href="https://drive.google.com/file/d/1GhwG9xgffZMJXunGwzCGS6mksU8E28Ws/view?usp=sharing"
+          download
+        >
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
     </div>
 
     <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-</body>
+  </body>
 </html>
